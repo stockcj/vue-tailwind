@@ -1,5 +1,7 @@
 # vue-tailwind2
 
+Vue Cli-3 Template with Tailwind and router transitions.
+
 ## Project setup
 ```
 npm install
