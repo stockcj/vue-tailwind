@@ -99,19 +99,19 @@ export default {
 }
 
 #nav-icon span:nth-child(1) {
-  top: 35%
+  top: 40%
 }
 
 #nav-icon span:nth-child(2),
 #nav-icon span:nth-child(3) {
-  top: 45%;
+  top: 50%;
 }
 
 #nav-icon span:nth-child(4) {
-  top: 55%;
+  top: 60%;
 }
 #nav-icon.open span:nth-child(1) {
-  top: 45%;
+  top: 50%;
   width: 0%;
   left: 50%;
 }
@@ -131,7 +131,7 @@ export default {
 }
 
 #nav-icon.open span:nth-child(4) {
-  top: 45%;
+  top: 50%;
   width: 0%;
   left: 50%;
 }
