@@ -5,7 +5,13 @@
         <div class="flex flex-no-shrink items-stretch h-16">
           <router-link to="/" class="flex-no-grow flex-no-shrink relative py-2 leading-normal no-underline flex items-center hover:font-bold">Brand</router-link>
         </div>
-        <div class="md:hidden">
+        <div id="nav-icon" class="md:hidden w-16 h-16 relative cursor-pointer" :class="{ open: isOpen }" @click.stop="isOpen = !isOpen">
+          <span class="block absolute bg-black w-1/2 opacity-100"></span>
+          <span class="block absolute bg-black w-1/2 opacity-100"></span>
+          <span class="block absolute bg-black w-1/2 opacity-100"></span>
+          <span class="block absolute bg-black w-1/2 opacity-100"></span>
+        </div>
+        <div class="hidden">
           <button class="cursor-pointer w-16 h-16 p-4" @click.stop="drawer = !drawer" v-show="!drawer">
             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
@@ -45,7 +51,8 @@ export default {
   name: "App",
   data() {
     return {
-      drawer: null
+      drawer: null,
+      isOpen: false
     };
   },
   components: {
@@ -67,5 +74,65 @@ export default {
 }
 .content {
   flex: 1;
+}
+#nav-icon {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+#nav-icon span {
+  height: 2px;
+  left: 25%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 35%
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+  top: 45%;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 55%;
+}
+#nav-icon.open span:nth-child(1) {
+  top: 45%;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 45%;
+  width: 0%;
+  left: 50%;
 }
 </style>
