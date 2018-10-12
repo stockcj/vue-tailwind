@@ -21,19 +21,13 @@
         </div>
         <div class="hidden md:flex md:flex-no-shrink md:items-stretch">
           <div class="md:flex md:items-stretch md:justify-end ml-auto">
-            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 1</a>
+            <router-link to="/about" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 1</router-link>
             <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 2</a>
             <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 3</a>
           </div>
       </div>
       </div>
     </nav>
-    <!-- <div class="bg-green-lighter" id="nav">
-      <div class="container py-6">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </div>
-    </div> -->
     <div class="container content py-6">
       <transition-page> 
         <router-view/>
@@ -99,7 +93,7 @@ export default {
 }
 
 #nav-icon span:nth-child(1) {
-  top: 40%
+  top: 40%;
 }
 
 #nav-icon span:nth-child(2),
