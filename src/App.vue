@@ -56,13 +56,11 @@ export default {
 </script>
 
 <style>
-@import url("./assets/css/main.css");
+@import url("./styles/css/main.css");
 #app {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  color: #2c3e50;
 }
 .content {
   flex: 1;
