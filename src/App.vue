@@ -21,7 +21,7 @@
         </div>
         <div class="hidden md:flex md:flex-no-shrink md:items-stretch">
           <div class="md:flex md:items-stretch md:justify-end ml-auto">
-            <router-link to="/about" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 1</router-link>
+            <router-link to="/typography" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 1</router-link>
             <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 2</a>
             <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 3</a>
           </div>
