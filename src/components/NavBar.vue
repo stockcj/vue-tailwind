@@ -2,7 +2,7 @@
   <nav class="relative bg-primary">
     <div class="container flex justify-between items-stretch">
       <div class="flex flex-no-shrink items-stretch h-16">
-        <router-link to="/" class="flex-no-grow flex-no-shrink relative py-2 leading-normal no-underline flex items-center hover:font-bold">Brand</router-link>
+        <router-link to="/" class="flex-no-grow flex-no-shrink relative py-2 leading-normal no-underline flex items-center hover:font-bold text--lg">Brand</router-link>
         </div>
         <div id="nav-icon" class="md:hidden w-16 h-16 relative cursor-pointer" :class="{ open: isOpen }" @click.stop="isOpen = !isOpen">
         <span class="block absolute bg-black w-1/2 opacity-100"></span>
@@ -20,9 +20,9 @@
         </div>
         <div class="hidden md:flex md:flex-no-shrink md:items-stretch">
         <div class="md:flex md:items-stretch md:justify-end ml-auto">
-            <router-link to="/typography" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light">Item 1</router-link>
-            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light">Item 2</a>
-            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light">Item 3</a>
+            <router-link to="/typography" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 1</router-link>
+            <router-link to="/colors" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 2</router-link>
+            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 3</a>
         </div>
       </div>
     </div>

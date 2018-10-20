@@ -25,6 +25,15 @@ export default new Router({
       name: "about-more",
       component: () => import("./views/AboutMore.vue"),
       meta: { transitionName: "slide" }
+    },
+    {
+      path: "/colors",
+      name: "colors",
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Colors.vue")
     }
   ]
 });
