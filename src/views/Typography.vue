@@ -1,5 +1,5 @@
 <template>
-  <div class="typography">
+  <div id="typography">
     <h1 class="text--xxxl">Typography</h1>
     <typography-demo></typography-demo>
   </div>

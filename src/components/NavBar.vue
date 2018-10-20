@@ -22,7 +22,7 @@
         <div class="md:flex md:items-stretch md:justify-end ml-auto">
             <router-link to="/typography" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 1</router-link>
             <router-link to="/colors" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 2</router-link>
-            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 3</a>
+            <router-link to="/buttons" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light text--md">Item 3</router-link>
         </div>
       </div>
     </div>

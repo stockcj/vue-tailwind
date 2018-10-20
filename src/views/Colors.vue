@@ -1,5 +1,5 @@
 <template>
-  <div class="colors">
+  <div id="colors">
     <h1 class="text--xxxl">Colors</h1>
     <colors-demo></colors-demo>
   </div>
