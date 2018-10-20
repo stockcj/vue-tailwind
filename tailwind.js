@@ -45,6 +45,17 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'transparent': 'transparent',
+  'primary': '#508eca',
+  'primary-light': '#99ccff',
+  'primary-dark': '#006699',
+
+  'accent': '#33cc99',
+  'accent-light': '#99ffcc',
+  'accent-dark': '#009966',
+
+  'success': '#3366cc',
+  'error': '#ff0000',
+  'warning': '#ff6600',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
@@ -678,20 +689,20 @@ module.exports = {
   margin: {
     'auto': 'auto',
     'px': '1px',
-    '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.25rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '20': '5rem',
-    '24': '6rem',
-    '32': '8rem',
+    '0f': '0',
+    '1f': '0.25rem',
+    '2f': '0.5rem',
+    '3f': '0.75rem',
+    '4f': '1rem',
+    '5f': '1.25rem',
+    '6f': '1.5rem',
+    '8f': '2rem',
+    '10f': '2.5rem',
+    '12f': '3rem',
+    '16f': '4rem',
+    '20f': '5rem',
+    '24f': '6rem',
+    '32f': '8rem',
   },
 
 

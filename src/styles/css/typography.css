@@ -12,12 +12,26 @@
 
   --heading-line-height: 1.2;
   --body-line-height: 1.4;
+
+  /* spacing values */
+  --space-unit: 1em;
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs: calc(0.375 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+  --space-xxxl: calc(8.5 * var(--space-unit));
+
 }
 
 @screen md {
   :root {
     --text-base-size: 1.25em;
     --text-scale-ratio: 1.25;
+    --space-unit: 1.25em;
   }
 }
 
@@ -28,9 +42,13 @@ body {
   font-size: var(--text-base-size);
 }
 
-h1, h2, h3, h4, form legend {
-  @apply text-blue-darker; 
-  @apply mb-2;
+h1,
+h2,
+h3,
+h4,
+form legend {
+  @apply text-blue-darker;
+  margin-bottom: var(--space-xxs);
   line-height: var(--heading-line-height);
 }
 
@@ -39,23 +57,28 @@ h1, h2, h3, h4, form legend {
   font-size: var(--text-xxxl);
 }
 
-h1, .text--xxl {
+h1,
+.text--xxl {
   font-size: var(--text-xxl);
 }
 
-h2, .text--xl {
+h2,
+.text--xl {
   font-size: var(--text-xl);
 }
 
-h3, .text--lg {
+h3,
+.text--lg {
   font-size: var(--text-lg);
 }
 
-h4, .text--md {
+h4,
+.text--md {
   font-size: var(--text-md);
 }
 
-.text--sm, small {
+.text--sm,
+small {
   font-size: var(--text-sm);
 }
 
@@ -67,52 +90,57 @@ p {
   line-height: var(--body-line-height);
 }
 
-/* a {
-  color: var(--color-link);
+a {
+  @apply text-blue;
 }
 
 a:visited {
-  color: var(--color-link-visted);
-} */
+  @apply text-indigo-dark;
+}
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
-/* .text-container {
-  h2, h3, h4 {
-      margin-top: var(--space-sm);
-  }
-  
-  ul, ol, p {
-      margin-bottom: var(--space-md);
-  }
-
-  ul, ol {
-  list-style-position: outside;
-      padding-left: 24px;
+.text-container h2,
+h3,
+h4 {
+  margin-top: var(--space-sm);
 }
 
-ul {
+.text-container ul,
+ol,
+p {
+  margin-bottom: var(--space-md);
+}
+
+.text-container ul,
+ol {
+  list-style-position: outside;
+  padding-left: 24px;
+}
+
+.text-container ul {
   list-style-type: disc;
 }
 
-ol {
+.text-container ol {
   list-style-type: decimal;
-  }
+}
 
-  ul li, ol li {
-      line-height: var(--body-line-height);
-  }
-  
-  em {
-      font-style: italic;
-  }
+.text-container ul li,
+ol li {
+  line-height: var(--body-line-height);
+}
 
-  u {
-      text-decoration: underline;
-  }
-} */
+.text-container em {
+  font-style: italic;
+}
+
+.text-container u {
+  text-decoration: underline;
+}
 
 /* utility classes */
 .truncate {

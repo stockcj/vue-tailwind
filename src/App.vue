@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="relative bg-green-lighter">
+    <nav class="relative bg-primary">
       <div class="container flex justify-between items-stretch">
         <div class="flex flex-no-shrink items-stretch h-16">
           <router-link to="/" class="flex-no-grow flex-no-shrink relative py-2 leading-normal no-underline flex items-center hover:font-bold">Brand</router-link>
@@ -21,9 +21,9 @@
         </div>
         <div class="hidden md:flex md:flex-no-shrink md:items-stretch">
           <div class="md:flex md:items-stretch md:justify-end ml-auto">
-            <router-link to="/typography" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 1</router-link>
-            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 2</a>
-            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-green-light">Item 3</a>
+            <router-link to="/typography" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light">Item 1</router-link>
+            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light">Item 2</a>
+            <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-primary-light">Item 3</a>
           </div>
       </div>
       </div>
@@ -33,7 +33,7 @@
         <router-view/>
       </transition-page>
     </div>
-    <footer class="bg-green-lighter">
+    <footer class="bg-primary">
       <div class="container py-6">2018</div>
     </footer>
   </div>
