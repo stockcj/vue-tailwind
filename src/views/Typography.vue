@@ -1,7 +1,6 @@
 <template>
   <div class="typography">
     <h1 class="text--xxxl">Typography</h1>
-    <router-link to="typography/more">About More</router-link>
     <typography-demo></typography-demo>
   </div>
 </template>
