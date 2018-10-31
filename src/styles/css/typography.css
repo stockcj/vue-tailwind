@@ -92,10 +92,10 @@ p {
 
 a {
   @apply text-blue;
-}
 
-a:visited {
-  @apply text-indigo-dark;
+  &:visited {
+    @apply text-indigo-dark;
+  }
 }
 
 b,
@@ -103,43 +103,39 @@ strong {
   font-weight: bold;
 }
 
-.text-container h2,
-h3,
-h4 {
-  margin-top: var(--space-sm);
-}
+.text-container {
+  h2, h3, h4 {
+      margin-top: var(--space-sm);
+  }
+  
+  ul, ol, p {
+      margin-bottom: var(--space-md);
+  }
 
-.text-container ul,
-ol,
-p {
-  margin-bottom: var(--space-md);
-}
-
-.text-container ul,
-ol {
+  ul, ol {
   list-style-position: outside;
-  padding-left: 24px;
+      padding-left: 24px;
 }
 
-.text-container ul {
+ul {
   list-style-type: disc;
 }
 
-.text-container ol {
+ol {
   list-style-type: decimal;
-}
+  }
 
-.text-container ul li,
-ol li {
-  line-height: var(--body-line-height);
-}
+  ul li, ol li {
+      line-height: var(--body-line-height);
+  }
+  
+  em {
+      font-style: italic;
+  }
 
-.text-container em {
-  font-style: italic;
-}
-
-.text-container u {
-  text-decoration: underline;
+  u {
+      text-decoration: underline;
+  }
 }
 
 /* utility classes */
