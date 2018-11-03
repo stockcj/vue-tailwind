@@ -24,8 +24,8 @@ export default {
 };
 </script>
 
-<style>
-@import url("./styles/css/main.css");
+<style lang="scss" scoped>
+@import url("./styles/css/main.scss");
 #app {
   display: flex;
   min-height: 100vh;

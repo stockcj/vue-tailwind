@@ -105,16 +105,16 @@ strong {
 
 .text-container {
   h2, h3, h4 {
-      margin-top: var(--space-sm);
+    margin-top: var(--space-sm);
   }
   
   ul, ol, p {
-      margin-bottom: var(--space-md);
+    margin-bottom: var(--space-md);
   }
 
   ul, ol {
-  list-style-position: outside;
-      padding-left: 24px;
+    list-style-position: outside;
+    padding-left: 24px;
 }
 
 ul {
@@ -126,17 +126,18 @@ ol {
   }
 
   ul li, ol li {
-      line-height: var(--body-line-height);
+    line-height: var(--body-line-height);
   }
   
   em {
-      font-style: italic;
+    font-style: italic;
   }
 
   u {
-      text-decoration: underline;
+    text-decoration: underline;
   }
 }
+
 
 /* utility classes */
 .truncate {
